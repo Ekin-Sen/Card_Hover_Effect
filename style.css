@@ -27,3 +27,27 @@ body {
     opacity: 0.75;
     scale: 1;
 }
+
+card_body {
+    position: absolute;
+    inset: 0;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.card_body::before {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    border: 2px solid #fff;
+    opacity: 0;
+    scale: 1.25;
+    transition: opacity 0.25s,
+    scale 0.35s;
+}

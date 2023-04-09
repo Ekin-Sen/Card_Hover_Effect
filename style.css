@@ -51,3 +51,28 @@ card_body {
     transition: opacity 0.25s,
     scale 0.35s;
 }
+
+.card:hover .card_body::before {
+    opacity: 1;
+    scale: 1;
+}
+
+.card_title {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px
+                rgba(0, 0, 0, .5);
+}
+
+.card_description {
+    font-size: 14px;
+    opacity: 0;
+    translate: -25px;
+    transition: opacity 0.25s,
+    translate 0.35s;
+}
+
+.card:hover .card_description {
+    opacity: 1;
+    translate: 0;
+}

@@ -6,3 +6,24 @@ body {
     height: 100vh;
 }
 
+.card {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.card_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.15;
+    transition: opacity 0.25s,
+        scale 0.35s;
+}
+
+.card:hover .card_image {
+    opacity: 0.75;
+    scale: 1;
+}
